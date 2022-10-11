@@ -1,0 +1,12 @@
+.mainText
+{
+    text-align:left;
+    vertical-align:text-top;
+    font-size:40px;
+    font-family:Noto Sans;
+    letter-spacing:3%;
+    line-height:60%;
+    left:46px;
+    top:264px;
+    position:absolute;
+}
