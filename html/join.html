@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/join.css">
     <title>ONESOS 회원가입</title>
 </head>
 <body>
@@ -18,12 +18,30 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <main>
+    <div>
+        <h2>회원가입을 위해<br>
+            다음 항목들을 작성해주세요</h2>
+    </div>
         <form>
-            <input type="text" class="value-input" id="email_input" placeholder="이메일"></input>
-            <input type="text" class="value-input" id="password_input" placeholder="비밀번호"></input>
-            <input type="text" class="value-input" id="password_confirm_input" placeholder="비밀번호 확인"></input>
-            <input type="text" class="value-input" id="name_input" placeholder="이름"></input>
-            <button type="button" class="submit-btn" id="register">다음</button>
+            <label>이름*</label>
+            <input type="text" class="value-input" id="name_input" placeholder="홍길동"></input>
+            <label>이메일*</label>
+            <input type="text" class="value-input" id="email_input" placeholder="onesos123@onesos.com"></input>
+            <label>비밀번호*</label>
+            <input type="text" class="value-input" id="password_input" placeholder="영문, 숫자, 특수문자 포함 8~16자리"></input>
+            <label>비밀번호 재입력*</label>
+            <input type="text" class="value-input" id="password_confirm_input" placeholder="비밀번호를 재입력해주세요"></input>
+            <label>차량번호*</label>
+            <input type="text" class="value-input" id="car_number" placeholder="123가4567"></input>
+            <label>보험사*</label>
+            <input type="text" class="value-input" id="company_name" placeholder="가입한 보험사명을 입력해주세요"></input>
+            <label>차량명*</label>
+            <input type="text" class="value-input" id="car_name" placeholder="차량명을 입력해주세요"></input>
+            <label>보호자 연락처</label>
+            <input type="text" class="value-input" id="other_phone_number" placeholder="보호자 연락처를 -을 제외하고 입력해주세요"></input>
+            <label class="join_info_label" style="margin-top: 25px;">회원가입 시&nbsp<span class="rule">이용약관</span>,&nbsp<span class="rule">개인정보 처리방침</span>에 대해</label>
+            <label class="join_info_label" style="margin-bottom: 25px;">동의한 것으로 간주됩니다.</label>
+            <button type="button" class="submit-btn" id="register">확인</button>
         </form>
     </div>
 </main>
