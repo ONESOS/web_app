@@ -23,14 +23,23 @@
             다음 항목들을 작성해주세요</h2>
     </div>
         <form>
-            <label>이메일</label>
-            <input type="text" class="value-input" id="email_input" placeholder="onesos123@onesos.com"></input>
-            <label>비밀번호</label>
-            <input type="text" class="value-input" id="password_input" placeholder="영문, 숫자, 특수문자 포함 8~16자리"></input>
-            <label>비밀번호 재입력</label>
-            <input type="text" class="value-input" id="password_confirm_input" placeholder="비밀번호를 재입력해주세요"></input>
-              
-            <button type="button" class="submit-btn" id="register1">다음</button>
+            <label>이름</label>
+            <input type="text" class="value-input" id="name_input" placeholder="홍길동"></input>
+            <label>보호자 연락처</label>
+            <input type="text" class="value-input" id="other_phone_number_input" placeholder="보호자 연락처를 -을 제외하고 입력해주세요"></input>
+            <label>차량번호</label>
+            <input type="text" class="value-input" id="car_number_input" placeholder="123가4567"></input>
+            <label>보험사</label>
+            <select class="value-input" id="company_select">
+                <option value="none" hidden>보험사를 선택해주세요</option>
+                <option>삼성화재해상보험</option>
+                <option value="현대해상화재보험">현대해상화재보험</option>
+                <option value="DB손해보험">DB손해보험</option>
+                <option value="KB손해보험">KB손해보험</option>
+                <option value="메리츠화재해상">메리츠화재해상</option>
+                <option value="한화손해보험">한화손해보험</option>
+            </select>
+            <button type="button" class="submit-btn" id="register2">다음</button>
         </form>
     </div>
 </main>
