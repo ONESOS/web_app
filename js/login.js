@@ -17,7 +17,13 @@ function login(){
     var user_password = $('#password_login_input').val();
 
     firebase.auth().signInWithEmailAndPassword(user_email, user_password).then((result) => {
-        window.location.href = 'mypage.html';
+        const user = firebase.auth().currentUser;
+        if (user) {
+            const uid = user.uid;
+            localStorage.setItem('currentUser',uid);
+            window.location.href = 'mypage.html';
+        } else {
+        }
     }).catch((error) => {
         alert("로그인 오류입니다. 이메일과 비밀번호를 확인하세요.");
     });
