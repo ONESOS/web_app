@@ -15,9 +15,9 @@ firebase.initializeApp(firebaseConfig);
 
 function getDB(){
     // const dbRef = firebase.database().ref();
-
-    console.log(user.uid);
-    firebase.database().ref('MyRen/UserAccount/').once('value').then((snapshot) => {
+    const userUid=localStorage.getItem('currentUser')
+    console.log(userUid);
+    firebase.database().ref('MyRen/UserAccount/' + userUid).once('value').then((snapshot) => {
         if (snapshot.exists()) {
             console.log(snapshot.val());
             //console.log(snapshot);

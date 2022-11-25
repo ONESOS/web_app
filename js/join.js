@@ -27,7 +27,7 @@ function writeUserData(car_number, car_name, car_displacement, user_email,
         parentPhoneNumber: user_other_phone_number,
         password: user_password,
     });
-        
+    location.href("login.html") 
     
 }
 
