@@ -1,8 +1,37 @@
-﻿@font-face {
+.div_border_1 {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: gray;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    height: 30%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+}
+
+.Version_Title{
+    text-align: center;
+    font-size: 35;
+    margin-bottom: 40px;
+}
+
+.Version_Info{
+    text-align: center;
+    color: #F06A3C;
+    font-size: 30;
+    margin-bottom: 40px;
+}
+
+.Update_info{
+    text-align: center;
+    font-size: 15;
 }
 
 body {
@@ -11,6 +40,13 @@ body {
     font-family: 'Pretendard-Regular';
 }
 
+
+.button_leftarrow {
+    margin-left: -3%;
+    margin-right: 3%;
+    background-color : transparent;
+    border: transparent;
+}
 
 .div_header {
     border-bottom: 1px solid;
@@ -21,6 +57,7 @@ body {
     font-size: 20px;
     height: 10%;
     /* identical to box height, or 28px */
+
     display: flex;
     align-items: center;
 
@@ -43,18 +80,6 @@ main {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-.div_border_2 {
-    border: 1px solid;
-    border-radius: 10px;
-    border-width: 1px;
-    border-color: gray;
-    background-color: white;
-    margin: 20px;
-    padding: 10px;
-    height: 45%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-}
-
 .my_info_1 {
     font-weight: 600;
     font-size: 18px;
@@ -68,6 +93,30 @@ main {
     font-size: 14px;
     line-height: 200%;
 }
+
+
+.div_border_2 {
+    border: 1px solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: gray;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    height: 45%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.div_footer {
+    border-top: 1px solid;
+    border-color: gray;
+    text-align: center;
+    background-color: white;
+    height: 10%;
+    padding: -100px;
+
+}
+
 
 
 hr {

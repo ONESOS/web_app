@@ -21,7 +21,7 @@ function login(){
         if (user) {
             const uid = user.uid;
             localStorage.setItem('currentUser',uid);
-            window.location.href = 'mypage.html';
+            window.location.href = 'main.html';
         } else {
         }
     }).catch((error) => {

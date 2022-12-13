@@ -20,11 +20,32 @@
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
     <script src="../js/history.js"></script>
     <title>ONESOS 사고기록</title>
+    <div class="nav-bar">
+      <div class="logo-img"><img onclick="location.href='main.html'", src="onesos_logo.png" style="cursor: pointer;"></div>
+      <div onclick="Logout()" style="cursor:pointer">로그아웃</div>
+  </div>
 </head>
+<script>
+  function IDcheck(){
+      if(localStorage.getItem('currentUser') == 'null'){
+          alert("로그인 후 이용하세요");
+          location.href = "Login.html";
+      }
+  }
+
+  function Logout(){
+      firebase.auth().signOut().then(() => {
+      window.localStorage.setItem('currentUser', 'null');
+      location.href="Login.html"
+      console.log("Logout success")
+  }).catch((error) => {
+      });
+}
+</script>
+<script>
+ window.onload = IDcheck()
+</script>
 <body>
-<div class="nav-bar">
-    <div class="logo-img"><img src="onesos_logo.png"></div>
-</div>
 
 <main>
     <div>
@@ -56,12 +77,12 @@
   <nav class="bar">
     <ul class="bar__list">
         <li class="bar__btn">
-            <a class="bar__link" href="mypage.html"><i class="fas fa-house-user fa-2x"></i></a>
+            <a class="bar__link" href="main.html"><i class="fas fa-house-user fa-2x"></i></a>
         <li class="bar__btn">
             <a class="bar__link" href="history.html"><i class="fas fa-solid fa-list fa-2x"></i></a>
         </li>
         <li class="bar__btn">
-            <a class="bar__link" href="Information.html"><i class="fas fa-info-circle fa-2x"></i></a>
+            <a class="bar__link" href="myPage.html"><i class="fas fa-info-circle fa-2x"></i></a>
         </li>
     </ul>
 </nav>

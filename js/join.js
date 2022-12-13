@@ -195,7 +195,6 @@ const userInfo = {
         }
 
         if(car_name2.value != "" && car_fuel2.value != "none" && car_displacement2.value != "none"){
-                alert("성공");
                 userInfo.user_email = user_email;
                 userInfo.user_id = user_id;
                 userInfo.user_password = user_password;
@@ -211,9 +210,11 @@ const userInfo = {
                 console.log("car number = " + car_number, "car name = " + car_name, "car displacement = " + car_displacement,
                 "user email = " + user_email, "car fuel = " + car_fuel, "user id = " + user_id, "company = " + company, 
                 "user name = " + user_name, "user_other_phone_number = " + user_other_phone_number, "user password " + user_password);
+
                  writeUserData(userInfo.car_number, car_name, userInfo.car_displacement, userInfo.user_email,
                     userInfo.car_fuel, userInfo.user_id, userInfo.company, userInfo.user_name, userInfo.user_other_phone_number,
                     userInfo.user_password);
+                location.href="login.html"
             }
         
     });

@@ -1,0 +1,45 @@
+/*.mypage-main{*/
+/*    !*display: table;*!*/
+/*}*/
+.userDayCount{
+
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    /*display: table-row;*/
+    /*display: inline-block;*/
+    /*border-collapse: separate;*/
+}
+.drivingRecord, .carInfo{
+
+    /*display: inline-block;*/
+    border-radius: 10px;
+    background: #efefef;
+    padding:10px;
+    margin-left: 10px;
+}
+.carInfoTxt, .drivingRecordTxt{
+    text-align: center;
+}
+
+/*.drivingRecord,.carInfo{*/
+/*    height: 500px;*/
+/*}*/
+/*.row{*/
+/*    text-align: center;*/
+/*}*/
+.h3Lbl{
+    display: inline;
+    padding-bottom: 30px;
+}
+.h3Lbl1{
+    display: inline;
+    padding-bottom: 30px;
+    color: #9b9b9b;
+}
+table{
+    margin: auto;
+    margin-top: 120px;
+    border-spacing: 30px;
+    font-size: 25px;
+}

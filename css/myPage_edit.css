@@ -11,6 +11,28 @@ body {
     font-family: 'Pretendard-Regular';
 }
 
+input {
+    border: #F6F6F6;
+    width: 100%;
+}
+
+.button_leftarrow {
+    margin-left: -3%;
+    margin-right: 3%;
+    background-color : transparent;
+    border: transparent;
+}
+
+.button_success {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #B6B3B2;
+    color :  white;
+    margin: 10px;
+    padding: 10px;
+    width : 90%;
+    height: 90%;
+}
 
 .div_header {
     border-bottom: 1px solid;
@@ -32,16 +54,37 @@ main {
     height: 77%;
 }
 
+.form_design_1 {
+    display: flex;
+    width : 99%;
+}
+
 .div_border_1 {
     border: 1px solid;
     border-radius: 10px;
-    border-color: gray;
+    border-color: rgb(180, 180, 180);
     background-color: white;
-    margin: 20px;
+    color :  rgb(180, 180, 180);
+    margin: 10px;
     padding: 10px;
-    height: 30%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    width : 90%;
 }
+
+
+.text_1 {
+    margin-left: 2%;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 200%;
+}
+
+.text_2 {
+    margin-left: 2%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
+}
+
 
 .div_border_2 {
     border: 1px solid;
@@ -55,18 +98,28 @@ main {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-.my_info_1 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 200%;
+.div_footer {
+    border-top: 1px solid;
+    border-color: gray;
+    text-align: center;
+    background-color: white;
+    height: 10%;
+    padding: -100px;
+
 }
 
+.nav {
+    font-size: 0;
+    display: inline-block;
+}
 
+.nav ul li {
+    margin: 10 50 10 10px;
+    display: inline-block;
+}
 
-.my_info_2 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 200%;
+.nav img {
+    width: 60%;
 }
 
 
@@ -96,4 +149,3 @@ hr {
     font-size: 14px;
     float : right;
 }
-

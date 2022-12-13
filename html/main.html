@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <title>ONE</title>
+</head>
+<script>
+    function IDcheck(){
+        if(localStorage.getItem('currentUser') == 'null'){
+            alert("로그인 후 이용하세요");
+            location.href = "Login.html";
+        }
+    }
+
+    function Logout(){
+        firebase.auth().signOut().then(() => {
+        window.localStorage.setItem('currentUser', 'null');
+        location.href="Login.html"
+        console.log("Logout success")
+    }).catch((error) => {
+        });
+}
+</script>
+<script>
+   window.onload = IDcheck()
+</script>
+<body>
+<div class="nav-bar" >
+    <div class="logo-img"><img onclick="location.href='main.html'", src="onesos_logo.png" style="cursor: pointer;"></div>
+    <div onclick="Logout()" style="cursor:pointer">로그아웃</div>
+</div>
+
+<main class="mypage-main">
+    <table>
+    <tr class="row2">
+        <td class="userHello" id="userIntro"></td>
+        <tdㄴㄴ></tdㄴㄴ>
+    </tr>
+<!--    <div class="drivingInfo">-->
+        <tr class="row">
+            <td class="drivingRecordTxt">
+                사고기록
+            </td>
+            <td class="carInfoTxt">
+                차량정보
+            </td>
+        </tr>
+        <tr class="row">
+            <td class="drivingRecord">
+                <h3 class="h3Lbl1">충돌감지 |</h3>
+                <h3 class="h3Lbl" id="yesterday-driving-distance" ></h3>
+                <h3 />
+                <h3 class="h3Lbl1">속도감지 |</h3>
+                <h3 class="h3Lbl" id="today-driving-distance"></h3>
+                <h3 />
+                <h3 class="h3Lbl1">직접신고 |</h3>
+                <h3 class="h3Lbl" id="pridict"></h3>
+            </td>
+            <td class="carInfo">
+                <h3 class="h3Lbl1">&nbsp&nbsp 차번 |</h3>
+                <h3 class="h3Lbl" id="car-number"> </h3>
+                <h3 />
+                <h3 class="h3Lbl1">&nbsp&nbsp 차종 |</h3>
+                <h3 class="h3Lbl" id="car-cata"></h3>
+                <h3 />
+                <h3 class="h3Lbl1">&nbsp&nbsp 차명 |</h3>
+                <h3 class="h3Lbl" id="car-model"></h3>
+                <h3 />
+                <h3 class="h3Lbl1">&nbsp&nbsp 유종 |</h3>
+                <h3 class="h3Lbl" id="car-oil-type"></h3>
+                <h3 />
+                <h3 class="h3Lbl1">보험사 |</h3>
+                <h3 class="h3Lbl" id="car-insurance"></h3>
+            </td>
+        </tr>
+    </table>
+<!--    </div>-->
+</main>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="../js/main.js"></script>
+<footer>
+    <nav class="bar">
+        <ul class="bar__list">
+            <li class="bar__btn">
+                <a class="bar__link" href="main.html"><i class="fas fa-house-user fa-2x"></i></a>
+            <li class="bar__btn">
+                <a class="bar__link" href="history.html"><i class="fas fa-solid fa-list fa-2x"></i></a>
+            </li>
+            <li class="bar__btn">
+                <a class="bar__link" href="myPage.html"><i class="fas fa-info-circle fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/840353c2e4.js" crossorigin="anonymous"></script>
+<script>
+
+</script>
+</html>
